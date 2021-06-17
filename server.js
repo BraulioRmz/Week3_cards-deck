@@ -8,7 +8,7 @@ const{ Deck, Hand } = require('./deck')
     const players = 5
     var hands_players = []
     for(i = 0; i<players; i++){
-      hands_players[i] = new Hand(deck,5);
+      hands_players[i] = new Hand(deck,3);
     }
 
     users=[]
@@ -21,6 +21,6 @@ const{ Deck, Hand } = require('./deck')
       users
       });
   });
-app.listen(3001, () =>{
+app.listen(4000, () =>{
 console.log('Server running on port 8080');
 });
